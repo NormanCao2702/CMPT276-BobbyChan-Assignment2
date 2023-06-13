@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/frontEnd.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Assignment 2</title>
+</head>
+<body class="bg-fixed bg-cover" style="background-image: url(/css/gif1.gif)">
+    <header class="mt-5 pr-4 items-center pt-4">
+      <div class="flex justify-between items-center">
+        <div class="text-white p-3 px-6 pt-2 rounded-full baseline ">
+        </div>
+        <a href="/students/view" class="p-3 px-6 pt-2 bg-teal-500 rounded-full text-white baseline hover:bg-teal-400 font-bold font-Roboto">Student Display</a>
+      </div>
+     </header>
+    <div class="flex relative w-full justify-center mt-36">
+            <div class="flex bg-transparent w-2/5 border-4 rounded-md justify-center pb-2 mr-4 text-center ">
+                <div class="">
+                  <h3 class="text-2xl font-Roboto font-bold text-rose-500 font-bold text-center mb-6 mt-1.5">Adding Student</h3>
+                  <form class="m-0 w-full pr-12" id="myform" action="/students/added" method="post">
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-pink-600 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+                          Name
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="fullname" type="text" value="Jane" placeholder="Bob" name="name" >
+                      </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-pink-600 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+                          GPA
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="gpa" value="2.9" placeholder="4.2" name="gpa">
+                      </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/3">
+                          <label class="block text-pink-600 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                            Height
+                          </label>
+                        </div>
+                        <div class="md:w-2/3">
+                          <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="h" value="150" placeholder="140" name="h">
+                        </div>
+                      </div>
+                      <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/3">
+                          <label class="block text-pink-600 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                            Weight
+                          </label>
+                        </div>
+                        <div class="md:w-2/3">
+                          <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="w" value="90" placeholder="40" name="w">
+                        </div>
+                      </div>
+                      <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/3">
+                          <label class="block text-pink-600 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                            Hair Color
+                          </label>
+                        </div>
+                        <div class="md:w-2/3">
+                          <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 .placeholder-transparent" type="color"id="hair" placeholder="Hair Color" name="hc">
+                        </div>
+                      </div>
+                    <div class="">
+                        <button class="shadow bg-teal-500 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold font-Roboto py-2 px-4 rounded" type="submit" id="addButton">
+                          Add
+                        </button>
+                    </div>
+                  </form>
+                </div>
+                
+            </div>
+      </div>
+ 
+</body>
+</html>
